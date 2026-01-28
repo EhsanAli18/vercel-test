@@ -14,12 +14,10 @@ async function getUserGeo() {
 }
 
 export const metadata = {
-  title: "Home",
-  openGraph: {
-    title: "Welcome to our Home Page",
-    description: "This is the main dashboard of our app.",
-    images: ["/home-og.png"],
-  },
+  // This allows Next.js to turn "/home-og.png" into a full URL
+  metadataBase: new URL('https://vercel-test1-qladnxdvv-ehsanali18s-projects.vercel.app'),
+  title: "My Geo App",
+  description: "Check your location and see a cool preview!",
 };
 
 export default async function HomePage() {
